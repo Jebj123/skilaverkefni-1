@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "07158870-cbda-4382-a60f-82f3a474fdf4",
+    "name": "Test User",
+    "email": "test@example.com"
+  },
+  {
+    "id": "7307ec4f-e930-4628-b0f3-c50d50b73ca0",
+    "name": "Test User",
+    "email": "test@example.com"
+  },
+  {
+    "id": "76779d0b-744c-41dc-8fee-510fb6c1723d",
+    "name": "Test Author",
+    "email": "test@example.com",
+    "bio": "Test bio"
+  },
+  {
+    "id": "f9944514-aee6-4e22-99ac-7313a05d2655",
+    "name": "Test Author",
+    "email": "test@example.com",
+    "bio": "Test bio"
+  },
+  {
+    "id": "aa7eeaae-9052-4d24-a1a0-664cb1e96797",
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  {
+    "id": "42095672-f6da-416a-afa1-67b52cbf0bab",
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  {
+    "id": "7d0109f4-684f-4944-bc6c-8c2f1389954e",
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  {
+    "id": "654bccba-f3cc-45ce-9e49-1a715b17f7a9",
+    "name": "Test Author",
+    "email": "test@example.com"
+  }
+]

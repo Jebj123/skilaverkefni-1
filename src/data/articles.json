@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "title": "Test Article",
+    "content": "This is a test article with enough content",
+    "id": "5c93e6a0-ca6b-4405-9814-eecde8124c83",
+    "authorId": "7d0109f4-684f-4944-bc6c-8c2f1389954e"
+  },
+  {
+    "title": "Test Article",
+    "content": "This is a test article with enough content",
+    "id": "2a39a302-a666-4a41-8179-1c5bb25d08bb",
+    "authorId": "654bccba-f3cc-45ce-9e49-1a715b17f7a9"
+  }
+]
