@@ -40,5 +40,47 @@
     "id": "654bccba-f3cc-45ce-9e49-1a715b17f7a9",
     "name": "Test Author",
     "email": "test@example.com"
+  },
+  {
+    "id": "334442d3-ec5c-400c-ab61-0ea72890677a",
+    "name": "Test User",
+    "email": "test@example.com"
+  },
+  {
+    "id": "6e4f3435-b27f-4f29-b643-3661532e33af",
+    "name": "Test User",
+    "email": "test@example.com"
+  },
+  {
+    "id": "83dc2fc4-e522-4185-be8e-c9d190b575ab",
+    "name": "Test Author",
+    "email": "test@example.com",
+    "bio": "Test bio"
+  },
+  {
+    "id": "f920341c-5649-4148-8e16-5409295cf2f9",
+    "name": "Test Author",
+    "email": "test@example.com",
+    "bio": "Test bio"
+  },
+  {
+    "id": "cac0b1e9-b0eb-4238-8881-0660be4acc4f",
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  {
+    "id": "f6fb6c9d-ac42-4a50-bd65-003308aa8aeb",
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  {
+    "id": "efcb325b-f78e-44ba-9fac-3d4851ff1d8a",
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  {
+    "id": "b74a153c-d999-4f05-8e52-92a06302b3b0",
+    "name": "Test Author",
+    "email": "test@example.com"
   }
 ]
