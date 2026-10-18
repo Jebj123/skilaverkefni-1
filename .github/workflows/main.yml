@@ -1,0 +1,47 @@
+name: Test-Our-App
+
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        test-file: [articles.test.js, authors.tests.js, errorHandler.test.js, validation.test.js]
+      steps:
+      - uses: action/checkout@v4
+      - name: setja upp nodejs
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Setja upp nodejs ${{ matrix.node-version}}
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: setja upp pakka
+        run: npm ci
+      - name: Keyra prófanir
+        run: npm test
+        continue-on-error: true
+      - name: Testin féllu!matrix:
+        if: failure()
+        run: echo "Testin féllu"
+
+      - name: Keyra ${{ matrix.test-file }}
+        id: test
+        run: npm test -- ${{ matrix.test-file}}
+      - name: test féll!
+        if: steps.test.outcome == 'failure'
+        run: |
+          echo: "test failed"
+          exit1
+      - name: Test tókst!
+        if: steps.test.outcome == 'success'
+        run: echo "${{ matrix.test-file }} stóðst"
+        
