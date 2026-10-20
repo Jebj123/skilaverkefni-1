@@ -28,7 +28,7 @@ useEffect(() => {
 
 return(
     <div className='max-w-6xl mx-auto p-6 pt-30'>
-        <h1 className='text-5xl flex m-h-screen items-center justify-center pb-10 underline pb-20 '>Authors</h1>
+        <h1 className='text-5xl flex m-h-screen items-center justify-center underline pb-20 '>Authors</h1>
         <ul className='grid grid-cols-4 gap-3'>
             {authors.map((author) =>(
                 <li key={author.id} className='grid grid-cols-1 border rounded-sm p-4 transition-transform hover:scale-102 hover:bg-blue-400' onClick={() => setSelectedAuthorId(author.id)} >
@@ -39,7 +39,7 @@ return(
         </ul>
         {selectedAuthorId && (
           <div className='mt-10 pt-20'>
-            <h2 className='text-3xl mb-4 underline'>Articles</h2>
+            <h2 className='text-4xl mb-4 underline flex justify-center items-center pb-4'>Articles</h2>
             <ArticleDashboard authorId={selectedAuthorId} />
           </div>
         )}

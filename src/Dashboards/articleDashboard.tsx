@@ -25,14 +25,14 @@ export default function ArticleDashboard({ authorId }: Props) {
 
   if (loading) return <p>Loading articles…</p>;
   if (error) return <p>Error: {error}</p>;
-  if (articles.length === 0) return <p>This author has no articles.</p>;
+  if (articles.length === 0) return <p className='flex justify-center items-center'>This author has no articles.</p>;
 
   return (
     <ul className='grid gap-3'>
       {articles.map((article) => (
         <li key={article.id} className='border rounded-sm p-4'>
-          <h2 className='text-xl font-bold'>{article.title}</h2>
-          <p>{article.content}</p>
+          <h2 className='text-xl font-bold flex justify-center items-center pb-4 underline'>{article.title}</h2>
+          <p className='flex justify-center items-center'>{article.content}</p>
         </li>
       ))}
     </ul>
